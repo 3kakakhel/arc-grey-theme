@@ -2,13 +2,13 @@
 // it gets @if ed depending on $variant
 
 
-$base_color: if($variant =='light', #ffffff, #404552);
-$text_color: if($variant == 'light', #5c616c, #D3DAE3);
-$bg_color: if($variant =='light', #F5F6F7, #383C4A);
-$fg_color: if($variant =='light', #5c616c, #D3DAE3);
+$base_color: if($variant =='light', #ffffff, #515151);
+$text_color: if($variant == 'light', #6b6b6b, #E2E2E2);
+$bg_color: if($variant =='light', #F4F4F4, #494949);
+$fg_color: if($variant =='light', #6b6b6b, #E2E2E2);
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: #5294E2;
+$selected_bg_color: #E0E0E0;
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: if($variant =='light', darken($bg_color,9%), darken($bg_color,6%));
 
@@ -29,20 +29,20 @@ $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), 
 $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%), lighten($bg_color, 2%));
 
 $header_bg: red;
-@if $transparency=='true' and $variant=='light' { $header_bg: transparentize(#e7e8eb, 0.05); }
-@if $transparency=='false' and $variant=='light' { $header_bg: #e7e8eb; }
-@if $transparency=='true' and ($variant=='dark' or $darker=='true') { $header_bg: transparentize(#2f343f, 0.03); }
-@if $transparency=='false' and ($variant=='dark' or $darker=='true') { $header_bg: #2f343f; }
+@if $transparency=='true' and $variant=='light' { $header_bg: transparentize(#eaeaea, 0.05); }
+@if $transparency=='false' and $variant=='light' { $header_bg: #eaeaea; }
+@if $transparency=='true' and ($variant=='dark' or $darker=='true') { $header_bg: transparentize(#3d3d3d, 0.03); }
+@if $transparency=='false' and ($variant=='dark' or $darker=='true') { $header_bg: #3d3d3d; }
 
 $header_bg_backdrop: if($darker == 'true' or $variant == 'dark', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
 
 $header_border: if($variant == 'light' and $darker=='false', darken($header_bg, 7%), darken($header_bg, 4%));
 
 $header_fg: if($variant == 'light', saturate(transparentize($fg_color, 0.2), 10%), saturate(transparentize($fg_color, 0.2), 10%));
-$header_fg: if($darker == 'true', saturate(transparentize(#D3DAE3, 0.2), 10%), $header_fg);
+$header_fg: if($darker == 'true', saturate(transparentize(#E2E2E2, 0.2), 10%), $header_fg);
 
-$dark_sidebar_bg: if($transparency == 'true', transparentize(#353945, 0.05), #353945);
-$dark_sidebar_fg: #BAC3CF;
+$dark_sidebar_bg: if($transparency == 'true', transparentize(#434444, 0.05), #434444);
+$dark_sidebar_fg: #CECECE;
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
 $osd_fg_color: $dark_sidebar_fg;
@@ -80,15 +80,15 @@ $wm_button_close_bg: if($variant == 'light' and $darker == 'false', #f46067, #cc
 $wm_button_close_hover_bg: if($variant == 'light' and $darker == 'false', #f68086, #d7787d);
 $wm_button_close_active_bg: if($variant == 'light' and $darker == 'false', #f13039, #be3841);
 
-$wm_icon_close_bg: if($variant == 'light' and $darker == 'false',#F8F8F9 , #2f343f);
+$wm_icon_close_bg: if($variant == 'light' and $darker == 'false',#F7F7F7 , #3d3d3d);
 
 // Minimize, Maximize
-$wm_button_hover_bg: if($variant == 'light' and $darker == 'false', #fdfdfd, #454C5C);
+$wm_button_hover_bg: if($variant == 'light' and $darker == 'false', #fdfdfd, #5B5B5B);
 $wm_button_active_bg: $selected_bg_color;
 
-$wm_button_hover_border: if($variant == 'light' and $darker == 'false', #D1D3DA, #262932);
+$wm_button_hover_border: if($variant == 'light' and $darker == 'false', #D8D8D8, #303030);
 
-$wm_icon_bg: if($variant == 'light' and $darker == 'false', #90949E, #90939B);
-$wm_icon_unfocused_bg: if($variant == 'light' and $darker == 'false', #B6B8C0, #666A74);
-$wm_icon_hover_bg: if($variant == 'light' and $darker == 'false', #7A7F8B, #C4C7CC);
+$wm_icon_bg: if($variant == 'light' and $darker == 'false', #9A9A9B, #999999);
+$wm_icon_unfocused_bg: if($variant == 'light' and $darker == 'false', #BEBEBF, #727272);
+$wm_icon_hover_bg: if($variant == 'light' and $darker == 'false', #898989, #CCCCCC);
 $wm_icon_active_bg: $selected_fg_color;

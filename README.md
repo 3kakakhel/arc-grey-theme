@@ -6,15 +6,15 @@ Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Sh
 
 #####Arc Grey
 
-![A screenshot of the Arc Grey theme](http://i.imgur.com/Ph5ObOa.png)
+![A screenshot of the Arc Grey theme](http://i.imgur.com/oi7y9BP.jpg)
 
 #####Arc-Darker Grey
 
-![A screenshot of the Arc-Darker Grey theme](http://i.imgur.com/NC6dqyl.png)
+![A screenshot of the Arc-Darker Grey theme](http://i.imgur.com/4BatNqe.jpg)
 
 #####Arc-Dark Grey
 
-![A screenshot of the Arc-Dark Grey theme](http://i.imgur.com/5AGlCnA.png)
+![A screenshot of the Arc-Dark Grey theme](http://i.imgur.com/TnnCLKw.jpg)
 
 
 ### Requirements
@@ -117,8 +117,8 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
 
 
 ### Bug reporting
-If you find a bug, please report it [here](https://github.com/eti1337/arc-grey-theme/issues)
+If you find a bug, please report it [here](https://github.com/eti1337/arc-grey-theme/issues) or [here](https://github.com/horst3180/arc-theme/issues).
 
 ### Full Preview
-![A full screenshot of the Arc theme](no)
-<sub>Screenshot Details: Icons: [Arc](https://github.com/horst3180/arc-icon-theme) | [Wallpaper](https://pixabay.com/photo-869593/) | Font: Futura Bk bt</sub>
+![A full screenshot of the Arc theme](http://i.imgur.com/vZz5MYC.png)
+<sub>Screenshot Details: Icons: [Paper](https://github.com/snwh/paper-icon-theme) | [Wallpaper](http://i.imgur.com/bHZEBVx.jpg) | Font: Futura Bk Book</sub>

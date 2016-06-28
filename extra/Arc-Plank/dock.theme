@@ -1,5 +1,5 @@
-# Arc theme for Plank
-# Author: Horst3180
+# Arc Grey theme for Plank
+# Author: eti1337
 # Adapted from the default Plank theme
 
 [PlankDrawingTheme]
@@ -10,13 +10,13 @@ BottomRoundness=0
 #The thickness (in pixels) of lines drawn.
 LineWidth=1
 #The color (RGBA) of the outer stroke.
-OuterStrokeColor=22;;26;;38;;255
+OuterStrokeColor=31;;31;;31;;255
 #The starting color (RGBA) of the fill gradient.
-FillStartColor=53;;57;;69;;242
+FillStartColor=61;;61;;61;;242
 #The ending color (RGBA) of the fill gradient.
-FillEndColor=53;;57;;69;;242
+FillEndColor=61;;61;;61;;242
 #The color (RGBA) of the inner stroke.
-InnerStrokeColor=53;;57;;69;;0
+InnerStrokeColor=61;;61;;61;;0
 
 [PlankDrawingDockTheme]
 #The padding on the left/right dock edges, in tenths of a percent of IconSize.

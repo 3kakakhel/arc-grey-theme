@@ -2,7 +2,7 @@
 
 Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc.
 
-* #### You can download the built themes* [here](https://github.com/eti1337/arc-grey-theme/tree/master/builds) *
+##### You can download the built themes [here](https://github.com/eti1337/arc-grey-theme/tree/master/builds) 
 
 ### Arc Grey is available in three variants
 

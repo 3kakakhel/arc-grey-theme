@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Arc</name>
-	<author>horst3180</author>
+	<name>Arc Grey</name>
+	<author>eti1337</author>
 	<copyright>horst3180</copyright>
-	<date>2015</date>
-	<description>Arc Metacity theme</description>
+	<date>2016</date>
+	<description>Arc Grey Metacity theme</description>
 </info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="#70788d" />
-<constant name="C_title_unfocused" value="#979dac" />
+<constant name="C_title_focused" value="#808080" />
+<constant name="C_title_unfocused" value="#a1a1a1" />
 
-<constant name="C_wm_bg_focused" value="#e7e8eb" />
-<constant name="C_wm_bg_unfocused" value="#e7e8eb" />
+<constant name="C_wm_bg_focused" value="#e8e8e8" />
+<constant name="C_wm_bg_unfocused" value="#e8e8e8" />
 
-<constant name="C_wm_highlight" value="#eeeff1" />
+<constant name="C_wm_highlight" value="#f0f0f0" />
 
 <!-- window button colors -->
 
@@ -29,13 +29,13 @@
 
 <!-- minimize, maximize -->
 <constant name="C_button_bg_hover" value="#fdfdfd" />
-<constant name="C_button_bg_active" value="#5294E2" />
+<constant name="C_button_bg_active" value="#999999" />
 
-<constant name="C_button_border_hover" value="#D1D3DA" />
+<constant name="C_button_border_hover" value="#d6d6d6" />
 
-<constant name="C_icon_bg_focused" value="#90949E" />
-<constant name="C_icon_bg_unfocused" value="#B6B8C0" />
-<constant name="C_icon_bg_hover" value="#7A7F8B" />
+<constant name="C_icon_bg_focused" value="#969696" />
+<constant name="C_icon_bg_unfocused" value="#bababa" />
+<constant name="C_icon_bg_hover" value="#828282" />
 <constant name="C_icon_bg_active" value="#ffffff" />
 
 <!-- geometries -->

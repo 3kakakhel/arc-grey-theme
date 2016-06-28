@@ -1,8 +1,8 @@
 /* XPM */
-static char * menu_active_xpm[] = {
+static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\menu_active_xpm[] = {
 "26 16 2 1",
-" 	c None",
-".	c #2F343F",
+" 	g None",
+".	g #343434",
 "..........................",
 "..........................",
 "..........................",

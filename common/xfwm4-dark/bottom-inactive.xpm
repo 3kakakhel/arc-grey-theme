@@ -1,6 +1,6 @@
 /* XPM */
-static char * bottom_inactive_xpm[] = {
+static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\bottom_inactive_xpm[] = {
 "12 1 2 1",
-" 	c None",
-".	c #21252B",
+" 	g None",
+".	g #252525",
 "............"};

@@ -1,11 +1,11 @@
 /* XPM */
-static char * hide_inactive_xpm[] = {
+static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\hide_inactive_xpm[] = {
 "28 28 5 1",
-" 	c None",
-".	c #21252B",
-"+	c #353B48",
-"@	c #2F343F",
-"#	c #666A73",
+" 	g None",
+".	g #252525",
+"+	g #3B3B3B",
+"@	g #343434",
+"#	g #6A6A6A",
 "............................",
 "++++++++++++++++++++++++++++",
 "@@@@@@@@@@@@@@@@@@@@@@@@@@@@",

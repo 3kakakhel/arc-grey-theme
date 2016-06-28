@@ -1,11 +1,11 @@
 /* XPM */
-static char * stick_active_xpm[] = {
+static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\stick_active_xpm[] = {
 "18 28 5 1",
-" 	c None",
-".	c #21252B",
-"+	c #353B48",
-"@	c #2F343F",
-"#	c #A4AAB7",
+" 	g None",
+".	g #252525",
+"+	g #3B3B3B",
+"@	g #343434",
+"#	g #AAAAAA",
 "..................",
 "++++++++++++++++++",
 "@@@@@@@@@@@@@@@@@@",

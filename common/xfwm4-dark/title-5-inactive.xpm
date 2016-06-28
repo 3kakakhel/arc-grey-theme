@@ -1,10 +1,10 @@
 /* XPM */
-static char * title_5_inactive_xpm[] = {
+static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\title_5_inactive_xpm[] = {
 "5 28 4 1",
-" 	c None",
-".	c #21252B",
-"+	c #353B48",
-"@	c #2F343F",
+" 	g None",
+".	g #252525",
+"+	g #3B3B3B",
+"@	g #343434",
 ".....",
 "+++++",
 "@@@@@",

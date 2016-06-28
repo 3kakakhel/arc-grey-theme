@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Arc</name>
-	<author>horst3180</author>
+	<name>Arc Grey</name>
+	<author>eti1337</author>
 	<copyright>horst3180</copyright>
-	<date>2015</date>
-	<description>Arc Metacity theme</description>
+	<date>2016</date>
+	<description>Arc Grey Metacity theme</description>
 </info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="gtk:custom(wm_title,#70788d)" />
-<constant name="C_title_unfocused" value="gtk:custom(wm_unfocused_title,#979dac)" />
+<constant name="C_title_focused" value="gtk:custom(wm_title,#808080)" />
+<constant name="C_title_unfocused" value="gtk:custom(wm_unfocused_title,#a1a1a1)" />
 
-<constant name="C_wm_bg_focused" value="gtk:custom(wm_bg,#e7e8eb)" />
-<constant name="C_wm_bg_unfocused" value="gtk:custom(wm_bg,#e7e8eb)" />
+<constant name="C_wm_bg_focused" value="gtk:custom(wm_bg,#e8e8e8)" />
+<constant name="C_wm_bg_unfocused" value="gtk:custom(wm_bg,#e8e8e8)" />
 
-<constant name="C_wm_highlight" value="gtk:custom(wm_highlight,#eeeff1)" />
+<constant name="C_wm_highlight" value="gtk:custom(wm_highlight,#f0f0f0)" />
 
 <!-- window button colors -->
 
@@ -29,13 +29,13 @@
 
 <!-- minimize, maximize -->
 <constant name="C_button_bg_hover" value="gtk:custom(wm_button_hover_bg,#fdfdfd)" />
-<constant name="C_button_bg_active" value="gtk:custom(wm_button_active_bg,#5294E2)" />
+<constant name="C_button_bg_active" value="gtk:custom(wm_button_active_bg,#999999)" />
 
-<constant name="C_button_border_hover" value="gtk:custom(wm_button_hover_border,#D1D3DA)" />
+<constant name="C_button_border_hover" value="gtk:custom(wm_button_hover_border,#d6d6d6)" />
 
-<constant name="C_icon_bg_focused" value="gtk:custom(wm_icon_bg,#90949E)" />
-<constant name="C_icon_bg_unfocused" value="gtk:custom(wm_icon_unfocused_bg,#B6B8C0)" />
-<constant name="C_icon_bg_hover" value="gtk:custom(wm_icon_hover_bg,#7A7F8B)" />
+<constant name="C_icon_bg_focused" value="gtk:custom(wm_icon_bg,#969696)" />
+<constant name="C_icon_bg_unfocused" value="gtk:custom(wm_icon_unfocused_bg,#bababa)" />
+<constant name="C_icon_bg_hover" value="gtk:custom(wm_icon_hover_bg,#828282)" />
 <constant name="C_icon_bg_active" value="gtk:custom(wm_icon_active_bg,#ffffff)" />
 
 <!-- geometries -->

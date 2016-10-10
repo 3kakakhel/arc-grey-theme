@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\hide_pressed_xpm[] = {
+static char * hide_pressed_xpm[] = {
 "28 28 17 1",
 " 	g None",
 ".	g #252525",

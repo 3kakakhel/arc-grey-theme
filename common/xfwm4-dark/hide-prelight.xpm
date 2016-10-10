@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\hide_prelight_xpm[] = {
+static char * hide_prelight_xpm[] = {
 "28 28 16 1",
 " 	g None",
 ".	g #252525",

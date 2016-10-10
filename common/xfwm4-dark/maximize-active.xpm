@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\maximize_active_xpm[] = {
+static char * maximize_active_xpm[] = {
 "28 28 11 1",
 " 	g None",
 ".	g #252525",

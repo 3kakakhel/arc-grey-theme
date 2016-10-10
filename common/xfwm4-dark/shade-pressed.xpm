@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\shade_pressed_xpm[] = {
+static char * shade_pressed_xpm[] = {
 "18 28 5 1",
 " 	g None",
 ".	g #252525",

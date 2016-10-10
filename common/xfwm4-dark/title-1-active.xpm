@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4_dark\title_1_active_xpm[] = {
+static char * title_1_active_xpm[] = {
 "5 28 4 1",
 " 	g None",
 ".	g #252525",

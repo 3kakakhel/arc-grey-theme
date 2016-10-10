@@ -1,5 +1,5 @@
 /* XPM */
-static char * C:\Users\ETi\Desktop\Git\arc_grey_theme\common\xfwm4\stick_active_xpm[] = {
+static char * stick_active_xpm[] = {
 "18 28 4 1",
 " 	g None",
 ".	g #EFEFEF",

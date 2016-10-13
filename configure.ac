@@ -1,9 +1,9 @@
 AC_INIT(
     [arc-grey-theme],
     [20160605],
-    [https://github.com/eti1337/arc-grey-theme/issues],
+    [https://github.com/eti0/arc-grey-theme/issues],
     [arc-grey-theme],
-    [https://github.com/eti1337/arc-grey-theme],
+    [https://github.com/eti0/arc-grey-theme],
     []
 )
 

@@ -1,9 +1,21 @@
 AC_INIT(
+<<<<<<< HEAD
     [arc-grey-theme],
     [20160605],
-    [https://github.com/eti0/arc-grey-theme/issues],
+    [https://github.com/eti1337/arc-grey-theme/issues],
     [arc-grey-theme],
+<<<<<<< HEAD
     [https://github.com/eti0/arc-grey-theme],
+=======
+    [arc-theme],
+    [20161005],
+    [https://github.com/horst3180/Arc-theme/issues],
+    [arc-theme],
+    [https://github.com/horst3180/Arc-theme],
+>>>>>>> upstream/master
+=======
+    [https://github.com/eti1337/arc-grey-theme],
+>>>>>>> parent of ae2f723... Pseudonym update
     []
 )
 
@@ -24,7 +36,7 @@ ARC_ENABLE([UNITY],         [unity],         [Unity],         [disable])
 ARC_ENABLE([XFWM],          [xfwm],          [XFWM],          [disable])
 ARC_ENABLE([TRANSPARENCY],  [transparency],  [transparency],  [disable])
 
-ARC_GNOME
+AS_IF([test "x$ENABLE_GNOME_SHELL$ENABLE_GTK3" != xnono], [ARC_GNOME])
 
 AC_CONFIG_FILES([
     common/Makefile

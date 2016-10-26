@@ -29,6 +29,8 @@ endif # ENABLE_DARK
 if ENABLE_CINNAMON
 	$(MKDIR_P) $(ithemedir)/cinnamon
 
+	cd $(srcdir)/cinnamon && cp thumbnail.png $(ithemedir)/cinnamon
+
 	cd $(srcdir)/cinnamon && cp -R \
 		common-assets \
 		light-assets \
@@ -37,6 +39,8 @@ if ENABLE_CINNAMON
 
 if ENABLE_DARK
 	$(MKDIR_P) $(ithemedarkdir)/cinnamon
+
+	cd $(srcdir)/cinnamon && cp thumbnail-dark.png $(ithemedarkdir)/cinnamon/thumbnail.png
 
 	cd $(srcdir)/cinnamon && cp -R \
 		common-assets \
@@ -128,6 +132,8 @@ if ENABLE_GTK3
 if ENABLE_LIGHT
 	$(MKDIR_P) $(ithemedir)/gtk-3.0
 
+	cd $(srcdir)/gtk-3.0 && cp thumbnail.png $(ithemedir)/gtk-3.0
+
 	cd $(srcdir)/gtk-3.0/$(GNOME_VERSION) && cp -R \
 		assets \
 		gtk.css \
@@ -137,6 +143,8 @@ endif # ENABLE_LIGHT
 
 if ENABLE_DARKER
 	$(MKDIR_P) $(ithemedarkerdir)/gtk-3.0
+
+	cd $(srcdir)/gtk-3.0 && cp thumbnail.png $(ithemedarkerdir)/gtk-3.0
 
 	cd $(srcdir)/gtk-3.0/$(GNOME_VERSION) && cp -R \
 		assets \
@@ -150,6 +158,8 @@ endif # ENABLE_DARKER
 
 if ENABLE_DARK
 	$(MKDIR_P) $(ithemedarkdir)/gtk-3.0
+
+	cd $(srcdir)/gtk-3.0 && cp thumbnail-dark.png $(ithemedarkdir)/gtk-3.0/thumbnail.png
 
 	cd $(srcdir)/gtk-3.0/$(GNOME_VERSION) && cp -R \
 		assets \
@@ -198,7 +208,7 @@ if ENABLE_METACITY
 if ENABLE_LIGHT
 	cp -R $(srcdir)/metacity-1 $(ithemedir)
 
-	cd $(ithemedir)/metacity-1 && rm metacity-theme-1-dark.xml metacity-theme-2-dark.xml
+	cd $(ithemedir)/metacity-1 && rm metacity-theme-1-dark.xml metacity-theme-2-dark.xml thumbnail-dark.png
 endif # ENABLE_LIGHT
 
 if ENABLE_DARKER
@@ -206,7 +216,8 @@ if ENABLE_DARKER
 
 	cd $(ithemedarkerdir)/metacity-1 && \
 		mv metacity-theme-1-dark.xml metacity-theme-1.xml && \
-		mv metacity-theme-2-dark.xml metacity-theme-2.xml
+		mv metacity-theme-2-dark.xml metacity-theme-2.xml && \
+		mv thumbnail-dark.png thumbnail.png
 endif # ENABLE_DARKER
 
 if ENABLE_DARK
@@ -214,7 +225,8 @@ if ENABLE_DARK
 
 	cd $(ithemedarkdir)/metacity-1 && \
 		mv metacity-theme-1-dark.xml metacity-theme-1.xml && \
-		mv metacity-theme-2-dark.xml metacity-theme-2.xml
+		mv metacity-theme-2-dark.xml metacity-theme-2.xml && \
+		mv thumbnail-dark.png thumbnail.png
 endif # ENABLE_DARK
 
 endif # ENABLE_METACITY
@@ -250,15 +262,27 @@ endif # ENABLE_UNITY
 if ENABLE_XFWM
 
 if ENABLE_LIGHT
-	cp -R $(srcdir)/xfwm4 $(ithemedir)
+	$(MKDIR_P) $(ithemedir)/xfwm4
+
+	cd $(srcdir)/xfwm4 && \
+		cp -R assets/*.png $(ithemedir)/xfwm4 && \
+		cp themerc $(ithemedir)/xfwm4/themerc
 endif # ENABLE_LIGHT
 
 if ENABLE_DARKER
-	cp -R $(srcdir)/xfwm4-dark $(ithemedarkerdir)/xfwm4
+	$(MKDIR_P) $(ithemedarkerdir)/xfwm4
+
+	cd $(srcdir)/xfwm4 && \
+		cp -R assets-dark/*.png $(ithemedarkerdir)/xfwm4 && \
+		cp themerc-dark $(ithemedarkerdir)/xfwm4/themerc
 endif # ENABLE_DARKER
 
 if ENABLE_DARK
-	cp -R $(srcdir)/xfwm4-dark $(ithemedarkdir)/xfwm4
+	$(MKDIR_P) $(ithemedarkdir)/xfwm4
+
+	cd $(srcdir)/xfwm4 && \
+		cp -R assets-dark/*.png $(ithemedarkdir)/xfwm4 && \
+		cp themerc-dark $(ithemedarkdir)/xfwm4/themerc
 endif # ENABLE_DARK
 
 endif # ENABLE_XFWM
@@ -283,7 +307,6 @@ EXTRA_DIST = $(srcdir)/cinnamon \
 	     $(srcdir)/metacity-1 \
 	     $(srcdir)/unity \
 	     $(srcdir)/xfwm4 \
-	     $(srcdir)/xfwm4-dark \
 	     $(srcdir)/index.theme \
 	     $(srcdir)/index.theme-darker \
 	     $(srcdir)/index.theme-dark

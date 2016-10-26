@@ -76,7 +76,7 @@ TerminalWindow {
 }
 
 .nautilus-desktop.nautilus-canvas-item {
-  color: white;
+  color: $selected_fg_color;
   text-shadow: 1px 1px transparentize(black, 0.4);
 
   &:active { color: $fg_color; }
@@ -508,7 +508,7 @@ PanelApplet .button:hover {
 PanelApplet .button:active, PanelApplet .button:active:backdrop,
 PanelApplet .button:checked, PanelApplet .button:checked:backdrop {
   background-clip: padding-box;
-  color: white;
+  color: $selected_fg_color;
   background-color: transparentize(black, 0.75);
   border-radius: 0;
   border-color: transparentize(black, 0.75);
@@ -516,7 +516,7 @@ PanelApplet .button:checked, PanelApplet .button:checked:backdrop {
 }
 
 PanelApplet:hover {
-  color: white;
+  color: $selected_fg_color;
 }
 
 PanelApplet:active,

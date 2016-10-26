@@ -2,7 +2,7 @@
 
 Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc.
 
-##### You can download the built themes [here](https://github.com/eti1337/arc-grey-theme/tree/master/builds) 
+##### You can download the built themes [here](https://github.com/eti0/arc-grey-theme/tree/master/builds) 
 
 ### Arc Grey is available in three variants
 
@@ -20,7 +20,7 @@ Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Sh
 
 ### Requirements
 
-* Gnome/GTK3 3.14 - 3.22
+* Gnome/GTK 3.14, 3.16, 3.18 or 3.20
 * The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
@@ -32,11 +32,11 @@ Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Sh
 Main distributions that meet these requirements are
 
 * Arch Linux and Arch Linux based distros
-* Ubuntu 15.04 or newer (**Ubuntu 14.04 and 14.10 are not supported**)
-* elementary OS Freya/Loki
+* Ubuntu 15.04, 15.10 and 16.04 (**Ubuntu 14.04 and 14.10 are not supported**)
+* elementary OS Freya
 * Debian 8, Testing or Unstable
 * Gentoo
-* Fedora 21 or newer
+* Fedora 21 - 24
 * openSUSE 13.2, Leap 42.1 and Tumbleweed
 
 Derivatives of these distributions should work, as well.
@@ -47,41 +47,9 @@ If your distribution isn't listed, please check the requirements yourself.
 
 **Important:** Remove all older versions of the theme from your system before you proceed any further.
 
-<<<<<<< HEAD
     sudo rm -rf /usr/share/themes/{Arc-Grey,Arc-Darker-Grey,Arc-Dark-Grey}
     rm -rf ~/.local/share/themes/{Arc-Grey,Arc-Darker-Grey,Arc-Dark-Grey}
     rm -rf ~/.themes/{Arc-Grey,Arc-Darker-Grey,Arc-Dark-Grey}
-=======
-    sudo rm -rf /usr/share/themes/{Arc,Arc-Darker,Arc-Dark}
-    rm -rf ~/.local/share/themes/{Arc,Arc-Darker,Arc-Dark}
-    rm -rf ~/.themes/{Arc,Arc-Darker,Arc-Dark}
-
-#### Packages
-
-Prebuilt packages for Ubuntu, Debian, Fedora and openSUSE are available at  
-http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme  
-
-A non-transparent version of the theme is available here  
-http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme-solid  
-
-**Note:** elementary OS Freya users can install the package for Ubuntu 15.04, Loki user can install the package for Ubuntu 16.04
-
---
-
-Arch Linux users can install the theme from the AUR
-
-**Official Releases**: https://aur.archlinux.org/packages/gtk-theme-arc/  
-
-**Development Releases**: https://aur.archlinux.org/packages/gtk-theme-arc-git/  
-
-**Note:** If you're having trouble with the AUR packages please email the package maintainer at zach@zach-adams.com before creating an issue.
->>>>>>> upstream/master
-
---
-
-Gentoo/Funtoo users can install `x11-themes/arc-theme` from the [Scriptkitties Overlay][sk-overlay].
-
---
 
 #### Manual Installation
 
@@ -92,7 +60,7 @@ To build the theme you'll need
 * `libgtk-3-dev` for Debian based distros or `gtk3-devel` for RPM based distros
 * `git` if you want to clone the source directory
 
-If your distribution doesn't ship separate development packages you just need GTK 3 instead of the `-dev` packages.
+If your distributions doesn't ship separate development packages you just need GTK 3 instead of the `-dev` packages.
 
 Install the theme with the following commands
 
@@ -100,7 +68,7 @@ Install the theme with the following commands
 
 If you want to install the latest version from git, clone the repository with
 
-    git clone https://github.com/eti1337/arc-grey-theme --depth 1 && cd arc-grey-theme
+    git clone https://github.com/eti0/arc-grey-theme --depth 1 && cd arc-grey-theme
 
 **2. Build and install the theme**
 
@@ -149,29 +117,9 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 
-<<<<<<< HEAD
 ### Bug reporting
-<<<<<<< HEAD
 If you find a bug, please report it [here](https://github.com/eti0/arc-grey-theme/issues) or [here](https://github.com/horst3180/arc-theme/issues).
-=======
-### Bugs
-If you find a bug, please report it at https://github.com/horst3180/arc-theme/issues
->>>>>>> upstream/master
-
-### License
-Arc is available under the terms the GPL-3.0. See `COPYING` for details.
-=======
-If you find a bug, please report it [here](https://github.com/eti1337/arc-grey-theme/issues) or [here](https://github.com/horst3180/arc-theme/issues).
->>>>>>> parent of ae2f723... Pseudonym update
 
 ### Full Preview
-<<<<<<< HEAD
 ![A full screenshot of the Arc theme](http://i.imgur.com/vZz5MYC.png)
 <sub>Screenshot Details: Icons: [Paper](https://github.com/snwh/paper-icon-theme) | [Wallpaper](http://i.imgur.com/bHZEBVx.jpg) | Font: Futura Bk Book</sub>
-=======
-![A full screenshot of the Arc theme](http://i.imgur.com/tD1OBQ3.png)
-<sub>Screenshot Details: Icons: [Arc](https://github.com/horst3180/arc-icon-theme) | Launcher Icons based on [White Pixel Icons](http://darkdawg.deviantart.com/art/White-Pixel-Icons-252310560) | [Wallpaper](https://pixabay.com/photo-869593/) | Font: Futura Bk bt</sub>
-
-
-[sk-overlay]: https://c.darenet.org/scriptkitties/overlay
->>>>>>> upstream/master

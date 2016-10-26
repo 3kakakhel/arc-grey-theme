@@ -2,8 +2,9 @@ AC_INIT(
 <<<<<<< HEAD
     [arc-grey-theme],
     [20160605],
-    [https://github.com/eti0/arc-grey-theme/issues],
+    [https://github.com/eti1337/arc-grey-theme/issues],
     [arc-grey-theme],
+<<<<<<< HEAD
     [https://github.com/eti0/arc-grey-theme],
 =======
     [arc-theme],
@@ -12,6 +13,9 @@ AC_INIT(
     [arc-theme],
     [https://github.com/horst3180/Arc-theme],
 >>>>>>> upstream/master
+=======
+    [https://github.com/eti1337/arc-grey-theme],
+>>>>>>> parent of ae2f723... Pseudonym update
     []
 )
 

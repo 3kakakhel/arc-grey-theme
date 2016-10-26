@@ -2,7 +2,7 @@
 
 Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc.
 
-##### You can download the built themes [here](https://github.com/eti0/arc-grey-theme/tree/master/builds) 
+##### You can download the built themes [here](https://github.com/eti1337/arc-grey-theme/tree/master/builds) 
 
 ### Arc Grey is available in three variants
 
@@ -100,7 +100,7 @@ Install the theme with the following commands
 
 If you want to install the latest version from git, clone the repository with
 
-    git clone https://github.com/eti0/arc-grey-theme --depth 1 && cd arc-grey-theme
+    git clone https://github.com/eti1337/arc-grey-theme --depth 1 && cd arc-grey-theme
 
 **2. Build and install the theme**
 
@@ -151,6 +151,7 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
 
 <<<<<<< HEAD
 ### Bug reporting
+<<<<<<< HEAD
 If you find a bug, please report it [here](https://github.com/eti0/arc-grey-theme/issues) or [here](https://github.com/horst3180/arc-theme/issues).
 =======
 ### Bugs
@@ -159,6 +160,9 @@ If you find a bug, please report it at https://github.com/horst3180/arc-theme/is
 
 ### License
 Arc is available under the terms the GPL-3.0. See `COPYING` for details.
+=======
+If you find a bug, please report it [here](https://github.com/eti1337/arc-grey-theme/issues) or [here](https://github.com/horst3180/arc-theme/issues).
+>>>>>>> parent of ae2f723... Pseudonym update
 
 ### Full Preview
 <<<<<<< HEAD

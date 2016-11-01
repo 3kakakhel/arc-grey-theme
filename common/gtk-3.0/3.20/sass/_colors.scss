@@ -18,11 +18,16 @@ $link_visited_color: if($variant == 'light', darken($selected_bg_color,20%),
                                      lighten($selected_bg_color,10%));
 
 $selection_mode_bg: if($transparency == 'true', transparentize($selected_bg_color, 0.05), $selected_bg_color);
+$selection_mode_fg: $selected_fg_color;
 $warning_color: #F27835;
 $error_color: #FC4138;
+$warning_fg_color: white;
+$error_fg_color: white;
 $success_color: #73d216;
 $destructive_color: #F04A50;
 $suggested_color: #4DADD4;
+$destructive_fg_color: white;
+$suggested_fg_color: white;
 
 $drop_target_color: #F08437;
 
@@ -82,7 +87,7 @@ $wm_button_close_bg: if($variant == 'light' and $darker == 'false', #f46067, #cc
 $wm_button_close_hover_bg: if($variant == 'light' and $darker == 'false', #f68086, #d7787d);
 $wm_button_close_active_bg: if($variant == 'light' and $darker == 'false', #f13039, #be3841);
 
-$wm_icon_close_bg: if($variant == 'light' and $darker == 'false',#F8F8F9 , #383838);
+$wm_icon_close_bg: if($variant == 'light' and $darker == 'false',#f7f7f7 , #383838);
 
 // Minimize, Maximize
 $wm_button_hover_bg: if($variant == 'light' and $darker == 'false', #fdfdfd, #525252);

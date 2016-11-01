@@ -1,11 +1,11 @@
 style "menubar" {
 
-  bg[NORMAL] = "#383838"
-  fg[NORMAL] = "#bababa"
-  fg[PRELIGHT] = "#bababa"
-  fg[ACTIVE] = "#bababa"
+  bg[NORMAL] = "#2f343f"
+  fg[NORMAL] = "#afb8c5"
+  fg[PRELIGHT] = "#afb8c5"
+  fg[ACTIVE] = "#afb8c5"
   fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = shade(0.7, "#bababa")
+  fg[INSENSITIVE] = shade(0.7, "#afb8c5")
 
   xthickness = 0
   ythickness = 0
@@ -23,10 +23,10 @@ style "menubar" {
 
 style "menubar-borderless" {
 
-  bg[NORMAL] = "#383838"
-  fg[NORMAL] = "#bababa"
+  bg[NORMAL] = "#2f343f"
+  fg[NORMAL] = "#afb8c5"
   fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = shade(0.7, "#bababa")
+  fg[INSENSITIVE] = shade(0.7, "#afb8c5")
 
   xthickness = 0
   ythickness = 0
@@ -72,15 +72,15 @@ style "menubar-text" {
 
 
 style "toolbar_text" {
-  fg[NORMAL] = "#bababa"
-  fg[PRELIGHT] = "#bababa"
-  fg[INSENSITIVE] = shade(0.7, "#bababa")
-  fg[ACTIVE] = "#bababa"
+  fg[NORMAL] = "#afb8c5"
+  fg[PRELIGHT] = "#afb8c5"
+  fg[INSENSITIVE] = shade(0.7, "#afb8c5")
+  fg[ACTIVE] = "#afb8c5"
 
-  text[NORMAL] = "#bababa"
-  text[PRELIGHT] = "#bababa"
-  text[INSENSITIVE] = shade(0.7, "#bababa")
-  text[ACTIVE] = "#bababa"
+  text[NORMAL] = "#afb8c5"
+  text[PRELIGHT] = "#afb8c5"
+  text[INSENSITIVE] = shade(0.7, "#afb8c5")
+  text[ACTIVE] = "#afb8c5"
 
 }
 
@@ -127,11 +127,11 @@ style "toolbar_button" {
 
 style "toolbar_entry" {
 
-  base[NORMAL] = "#4a4a4a"
-  base[ACTIVE] = "#4a4a4a"
-  base[INSENSITIVE] = "#424242"
+  base[NORMAL] = "#404552"
+  base[ACTIVE] = "#404552"
+  base[INSENSITIVE] = "#39404d"
 
-  text[NORMAL] = "#bababa"
+  text[NORMAL] = "#afb8c5"
 
   engine "pixmap" {
 
@@ -187,8 +187,8 @@ style "toolbar_entry" {
 #Chromium
 style "chrome-gtk-frame" {
 
-  ChromeGtkFrame::frame-color = "#383838"
-  ChromeGtkFrame::inactive-frame-color = "#383838"
+  ChromeGtkFrame::frame-color = "#2f343f"
+  ChromeGtkFrame::inactive-frame-color = "#2f343f"
 
   ChromeGtkFrame::frame-gradient-size = 0
   ChromeGtkFrame::frame-gradient-color = shade(0.5, @bg_color)
@@ -219,3 +219,4 @@ widget_class "*ThunarWindow*<GtkToolbar>*<GtkEntry>"                        styl
 widget_class "*ThunarWindow*<GtkToolbar>*<GtkButton>"                       style "toolbar_button"
 widget_class "*ThunarWindow*<GtkToolbar>*<GtkWidget>"                       style "toolbar_text"
 widget_class "*ThunarWindow*<GtkToolbar>*<GtkButton>*<GtkLabel>"            style "menubar-text"
+

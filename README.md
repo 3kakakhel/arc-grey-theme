@@ -2,7 +2,7 @@
 
 Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc.
 
-##### You can download the built themes [here](https://github.com/eti0/arc-grey-theme/tree/master/builds) 
+##### You can download the built themes [here](https://github.com/eti0/arc-grey-theme/tree/master/builds)
 
 ### Arc Grey is available in three variants
 
@@ -88,12 +88,11 @@ Other options to pass to autogen.sh are
     --disable-metacity         disable Metacity support
     --disable-unity            disable Unity support
     --disable-xfwm             disable XFWM support
-
     --with-gnome=<version>     build the theme for a specific Gnome version (3.14, 3.16, 3.18, 3.20)
                                Note: Normally the correct version is detected automatically and this
                                option should not be needed.
 
-After the installation is complete you can activate the theme with `gnome-tweak-tool` or a similar program by selecting `Arc`, `Arc-Darker` or `Arc-Dark` as Window/GTK+ theme and `Arc` or `Arc-Dark` as Gnome-Shell and Xfce-Notify theme.
+After the installation is complete you can activate the theme with `gnome-tweak-tool` or a similar program by selecting `Arc-Grey`, `Arc-Grey-Darker` or `Arc-Grey-Dark` as Window/GTK+ theme and `Arc-Grey` or `Arc-Grey-Dark` as Gnome-Shell and Xfce-Notify theme.
 
 **Uninstall the theme**
 
@@ -104,6 +103,15 @@ Run
 from the same directory as this README resides in, or
 
     sudo rm -rf /usr/share/themes/{Arc-Grey,Arc-Darker-Grey,Arc-Dark-Grey}
+
+### Extras
+
+#### Chrome/Chromium theme
+To install the Chrome/Chromium theme go to the `extra/Chrome` folder and drag and drop the arc-theme.crx or arc-dark-theme.crx file into the Chrome/Chromium window. The source of the Chrome themes is located in the source "Chrome/arc-theme" folder.
+
+#### Plank theme
+To install the Plank theme, copy the `extra/Arc-Plank` folder to `~/.local/share/plank/themes` or to `/usr/share/plank/themes` for system-wide use.
+Now open the Plank preferences window by executing `plank --preferences` from a terminal and select `Arc-Plank` as the theme.
 
 ### Troubleshooting
 
@@ -116,6 +124,9 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
 
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
+
+### Bugs
+If you find a bug, please report it at https://github.com/horst3180/arc-theme/issues
 
 ### Bug reporting
 If you find a bug, please report it [here](https://github.com/eti0/arc-grey-theme/issues) or [here](https://github.com/horst3180/arc-theme/issues).

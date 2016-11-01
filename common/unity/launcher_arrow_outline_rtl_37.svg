@@ -18,20 +18,6 @@
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    sodipodi:docname="launcher_arrow_outline_rtl_37.svg">
-  <defs
-     id="defs4">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath4069">
-      <rect
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.12000002;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
-         id="rect4071"
-         width="10"
-         height="19"
-         x="20"
-         y="1033.3622" />
-    </clipPath>
-  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -45,10 +31,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1301"
-     inkscape:window-height="650"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1346"
+     inkscape:window-height="699"
+     inkscape:window-x="10"
+     inkscape:window-y="35"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -65,13 +51,27 @@
      inkscape:snap-center="true"
      inkscape:snap-page="true">
     <inkscape:grid
-       type="xygrid"
-       id="grid4740"
-       empspacing="8"
-       visible="true"
+       snapvisiblegridlinesonly="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       visible="true"
+       empspacing="8"
+       id="grid4740"
+       type="xygrid" />
   </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath4069"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         y="1033.3622"
+         x="20"
+         height="19"
+         width="10"
+         id="rect4071"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.12000002;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+    </clipPath>
+  </defs>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -80,23 +80,23 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
+     transform="translate(0,-1015.3622)"
      id="layer1"
-     transform="translate(0,-1015.3622)">
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.4"
-       id="rect3338"
-       width="4"
-       height="33.000019"
-       x="12"
-       y="1017.3622"
+       rx="1.7382812e-05"
        ry="1.7382812e-05"
-       rx="1.7382812e-05" />
+       y="1017.3622"
+       x="12"
+       height="33.000019"
+       width="4"
+       id="rect3338"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.4" />
   </g>
 </svg>

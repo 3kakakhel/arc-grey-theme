@@ -21,8 +21,8 @@
    version="1.0"
    style="display:inline;enable-background:new">
   <sodipodi:namedview
-     stroke="#ef2929"
-     fill="#f57900"
+     stroke="#8c8c8c"
+     fill="#7a7a7a"
      id="base"
      pagecolor="#bebebe"
      bordercolor="#525252"
@@ -37,10 +37,10 @@
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="true"
-     inkscape:window-width="1600"
-     inkscape:window-height="848"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-width="1346"
+     inkscape:window-height="699"
+     inkscape:window-x="10"
+     inkscape:window-y="35"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -64,16 +64,16 @@
      guidehicolor="#001aff"
      guidehiopacity="0.49803922">
     <inkscape:grid
-       type="xygrid"
-       id="grid3123"
-       empspacing="4"
-       visible="true"
+       snapvisiblegridlinesonly="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       visible="true"
+       empspacing="4"
+       id="grid3123"
+       type="xygrid" />
     <sodipodi:guide
-       position="12,12"
+       id="guide4135"
        orientation="1,0"
-       id="guide4135" />
+       position="12,12" />
   </sodipodi:namedview>
   <defs
      id="defs3" />
@@ -128,31 +128,31 @@
     </rdf:RDF>
   </metadata>
   <g
-     style="display:inline"
-     inkscape:groupmode="layer"
-     inkscape:label="Base"
+     transform="translate(0,-276)"
      id="layer1"
-     transform="translate(0,-276)">
+     inkscape:label="Base"
+     inkscape:groupmode="layer"
+     style="display:inline">
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4138"
-       width="2"
-       height="2"
+       y="287"
        x="5"
-       y="287" />
-    <rect
-       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="rect4138-6"
-       width="2"
        height="2"
+       width="2"
+       id="rect4138"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="287"
        x="11"
-       y="287" />
-    <rect
-       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="rect4138-9"
-       width="2"
        height="2"
+       width="2"
+       id="rect4138-6"
+       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
+    <rect
+       y="287"
        x="17"
-       y="287" />
+       height="2"
+       width="2"
+       id="rect4138-9"
+       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
   </g>
 </svg>

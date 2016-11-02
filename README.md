@@ -129,5 +129,5 @@ If you find a bug you can [open a ticket](https://github.com/eti0/arc-grey-theme
 
 
 ### Full Preview
-![A full screenshot of the Arc theme](http://i.imgur.com/vZz5MYC.png)
-<sub>Screenshot Details: Icons: [Paper](https://github.com/snwh/paper-icon-theme) | [Wallpaper](http://i.imgur.com/bHZEBVx.jpg) | Font: Futura Bk Book</sub>
+![A full screenshot of the Arc theme](https://u.teknik.io/oOyVO.png)
+<sub>Screenshot Details: [Icons](https://github.com/eti0/arc-limon-icon-theme) | [Wallpaper](https://u.teknik.io/9S8IA.jpg) | Font: Noto Sans Regular</sub>

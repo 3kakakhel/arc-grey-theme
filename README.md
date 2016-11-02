@@ -125,7 +125,8 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 ### Bugs
-If you find a bug, please report it to me via mail at eti@eti.tf
+If you find a bug you can [open a ticket](https://github.com/eti0/arc-grey-theme/issues)
+
 
 ### Full Preview
 ![A full screenshot of the Arc theme](http://i.imgur.com/vZz5MYC.png)

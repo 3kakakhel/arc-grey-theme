@@ -22,7 +22,7 @@ Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Sh
 
 ### Requirements
 
-* Gnome/GTK 3.14, 3.16, 3.18 or 3.20
+* Gnome/GTK 3.14, 3.16, 3.18, 3.20 or 3.22
 * The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)

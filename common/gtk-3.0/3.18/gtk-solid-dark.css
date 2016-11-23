@@ -3318,7 +3318,7 @@ UnityDecoration {
 
 UnityPanelWidget,
 .unity-panel {
-  background-image: linear-gradient(to bottom, #373737);
+  background-image: linear-gradient(to bottom, #2f343f);
   color: #f7f7f7;
   box-shadow: none; }
   UnityPanelWidget:backdrop,

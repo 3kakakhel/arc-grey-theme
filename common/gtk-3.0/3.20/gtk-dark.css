@@ -3393,6 +3393,10 @@ button.documents-favorite:active:hover {
   opacity: 0.0;
   transition: opacity 0.2s ease-out; }
 
+.tweak-categories,
+.tweak-category:not(:selected):not(:hover) {
+  background-image: linear-gradient(to bottom, #4a4a4a, #4a4a4a); }
+
 .tr-workarea undershoot,
 .tr-workarea overshoot {
   border-color: transparent; }
@@ -3666,7 +3670,7 @@ UnityDecoration {
 
 UnityPanelWidget,
 .unity-panel {
-  background-image: linear-gradient(to bottom, #373737, #373737);
+  background-image: linear-gradient(to bottom, #2f343f, #2f343f);
   color: #f7f7f7;
   box-shadow: none; }
   UnityPanelWidget:backdrop,

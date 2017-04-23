@@ -131,5 +131,5 @@ If you find a bug you can [open a ticket](https://github.com/eti0/arc-grey-theme
 
 
 ### Full Preview
-![A full screenshot of the Arc theme](https://u.teknik.io/oOyVO.png)
+![A full screenshot of the Arc theme](http://i.imgur.com/VkhI2d5.png)
 <sub>Screenshot Details: [Icons](https://github.com/eti0/arc-limon-icon-theme) | [Wallpaper](https://u.teknik.io/9S8IA.jpg) | Font: Noto Sans Regular</sub>

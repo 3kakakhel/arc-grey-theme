@@ -2,8 +2,6 @@
 
 Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc.
 
-#### [Download link](https://mirror.eti.tf/arc-grey/arc-grey.tar.gz)
-
 ### Arc Grey is available in three variants
 
 ##### Arc Grey
@@ -92,6 +90,8 @@ Other options to pass to autogen.sh are
                                Note: Normally the correct version is detected automatically and this
                                option should not be needed.
 
+Note: Only MATE, XFCE, gtk-2.0, and gtk-3.20 are supported since that is all I needed.
+
 After the installation is complete you can activate the theme with `gnome-tweak-tool` or a similar program by selecting `Arc-Grey`, `Arc-Grey-Darker` or `Arc-Grey-Dark` as Window/GTK+ theme and `Arc-Grey` or `Arc-Grey-Dark` as Gnome-Shell and Xfce-Notify theme.
 
 **Uninstall the theme**
@@ -102,7 +102,7 @@ Run
 
 from the same directory as this README resides in, or
 
-    sudo rm -rf /usr/share/themes/{Arc-Grey,Arc-Darker-Grey,Arc-Dark-Grey}
+    sudo rm -rf /usr/share/themes/{Arc-Grey,Arc-Grey-Darker,Arc-Grey-Dark}
 
 ### Extras
 
@@ -125,9 +125,17 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 ### Bugs
-If you find a bug you can [open a ticket](https://github.com/eti0/arc-grey-theme/issues)
+If you find a bug you can [open a ticket](https://github.com/3kakakhel/arc-grey-theme/issues)
 
 
 ### Full Preview
 ![A full screenshot of the Arc theme](http://i.imgur.com/VkhI2d5.png)
 <sub>Screenshot Details: [Icons](https://snwh.org/paper) | Font: Futura</sub>
+
+### Credits
+
+Original Arc theme by horst3140.
+
+Original Arc Grey theme by eti0.
+
+This fork restores the grey close button and lightens the sidebar in the light version.

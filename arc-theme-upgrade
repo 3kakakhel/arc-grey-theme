@@ -6,7 +6,7 @@
 theme_name=arc-grey-theme
 
 # Theme name
-download_url=https://github.com/horst3180/$theme_name/archive/master.tar.gz
+download_url=https://github.com/3kakakhel/$theme_name/archive/master.tar.gz
 
 # for test purporses only (the repo needs to have this script)
 # download_url=https://github.com/leoheck/$theme_name/archive/master.tar.gz
@@ -15,15 +15,15 @@ download_url=https://github.com/horst3180/$theme_name/archive/master.tar.gz
 tempdir=/tmp/$theme_name
 
 # Directories
-lightdir=/usr/share/themes/Arc
+lightdir=/usr/share/themes/Arc-Grey
 darkerdir=/usr/share/themes/Arc-Grey-Darker
 darkdir=/usr/share/themes/Arc-Grey-Dark
 
-userlightdir=$HOME/.themes/Arc
+userlightdir=$HOME/.themes/Arc-Grey
 userdarkerdir=$HOME/.themes/Arc-Grey-Darker
 userdarkdir=$HOME/.themes/Arc-Grey-Dark
 
-userlightdir2=$HOME/local/share/themes/Arc
+userlightdir2=$HOME/local/share/themes/Arc-Grey
 userdarkerdir2=$HOME/local/share/themes/Arc-Grey-Darker
 userdarkdir2=$HOME/local/share/themes/Arc-Grey-Dark
 
@@ -121,9 +121,9 @@ install_theme() {
 
 # Main part
 clear
-echo '####################################'
-echo '#     Arc Theme Install Script     #'
-echo '####################################'
+echo '#############################################'
+echo '#     Arc Arc-Grey Theme Install Script     #'
+echo '#############################################'
 echo
 
 #Check available commands

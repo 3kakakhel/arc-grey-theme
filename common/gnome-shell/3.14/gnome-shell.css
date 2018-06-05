@@ -185,9 +185,9 @@ StScrollBar {
 .slider {
   -slider-height: 4px;
   -slider-background-color: #cfd6e6;
-  -slider-border-color: transparent;
+  -slider-border-color: rgba(0, 0, 0, 0);
   -slider-active-background-color: #999999;
-  -slider-active-border-color: transparent;
+  -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
   -slider-handle-radius: 0px;
   -slider-handle-border-color: transparent;
@@ -423,7 +423,7 @@ StScrollBar {
     padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .polkit-dialog-user-layout {
   padding-left: 10px;
@@ -499,9 +499,9 @@ StScrollBar {
 
 .popup-menu-boxpointer {
   -arrow-border-radius: 2px !important;
-  -arrow-background-color: transparent !important;
+  -arrow-background-color: rgba(0, 0, 0, 0) !important;
   -arrow-border-width: 1px !important;
-  -arrow-border-color: transparent !important;
+  -arrow-border-color: rgba(0, 0, 0, 0) !important;
   -arrow-base: 0 !important;
   -arrow-rise: 0 !important;
   color: #636363 !important; }
@@ -591,7 +591,7 @@ StScrollBar {
     background: rgba(99, 99, 99, 0.33); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: #c4c4c4; }
   .switcher-arrow:highlighted {
     color: white; }
@@ -663,7 +663,7 @@ StScrollBar {
     spacing: 8px; }
   #panel .panel-corner {
     -panel-corner-radius: 0px;
-    -panel-corner-background-color: transparent;
+    -panel-corner-background-color: rgba(0, 0, 0, 0);
     -panel-corner-border-width: 0px;
     -panel-corner-border-color: black; }
     #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus {
@@ -690,7 +690,7 @@ StScrollBar {
       background-color: rgba(0, 0, 0, 0.17);
       border-bottom-width: 1px;
       border-color: transparent;
-      text-shadow: 0 0 transparent; }
+      text-shadow: 0 0 rgba(0, 0, 0, 0); }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       color: #ffffff !important;
       background: #999999, url("common-assets/misc/null.svg");
@@ -698,7 +698,7 @@ StScrollBar {
       box-shadow: none;
       border-bottom-width: 1px !important;
       border-color: black;
-      text-shadow: 0 0 transparent; }
+      text-shadow: 0 0 rgba(0, 0, 0, 0); }
       #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
         icon-shadow: none; }
     #panel .panel-button .system-status-icon {
@@ -1477,7 +1477,7 @@ StScrollBar {
 
 .summary-boxpointer {
   -arrow-border-radius: 3px;
-  -arrow-background-color: transparent;
+  -arrow-background-color: rgba(0, 0, 0, 0);
   -arrow-base: 0;
   -arrow-rise: 0;
   -boxpointer-gap: 0;

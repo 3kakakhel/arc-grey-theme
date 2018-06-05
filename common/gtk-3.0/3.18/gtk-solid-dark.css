@@ -63,13 +63,13 @@
   border: 1px solid gray;
   background-color: rgba(128, 128, 128, 0.2); }
 
-.label.separator, .popover .label.separator, .sidebar .label.view.separator {
+.label.separator, .popover .label.separator, .label.sidebar.separator, .sidebar .label.view.separator {
   color: #dbdbdb; }
 
 .label:insensitive {
   color: rgba(219, 219, 219, 0.45); }
 
-.dim-label, .label.separator, .popover .label.separator, .sidebar .label.view.separator, .header-bar .subtitle {
+.dim-label, .label.separator, .popover .label.separator, .label.sidebar.separator, .sidebar .label.view.separator, .header-bar .subtitle {
   opacity: 0.55; }
 
 GtkAssistant .sidebar {
@@ -416,11 +416,9 @@ GtkSearchEntry.entry {
   .button.text-button.image-button, .header-bar .button.text-button.titlebutton,
   .titlebar .button.text-button.titlebutton {
     padding: 5px 8px; }
-    .button.text-button.image-button GtkLabel:first-child, .header-bar .button.text-button.titlebutton GtkLabel:first-child,
-    .titlebar .button.text-button.titlebutton GtkLabel:first-child {
+    .button.text-button.image-button GtkLabel:first-child, .header-bar .button.text-button.titlebutton GtkLabel:first-child, .titlebar .button.text-button.titlebutton GtkLabel:first-child {
       padding-left: 8px; }
-    .button.text-button.image-button GtkLabel:last-child, .header-bar .button.text-button.titlebutton GtkLabel:last-child,
-    .titlebar .button.text-button.titlebutton GtkLabel:last-child {
+    .button.text-button.image-button GtkLabel:last-child, .header-bar .button.text-button.titlebutton GtkLabel:last-child, .titlebar .button.text-button.titlebutton GtkLabel:last-child {
       padding-right: 8px; }
   .stack-switcher > .button {
     outline-offset: -3px; }
@@ -624,7 +622,17 @@ GtkSearchEntry.entry {
 .linked:not(.vertical) > .entry:focus, .osd .button, .osd .button:hover, .osd .button:active, .osd .button:checked, .osd .button:insensitive, .inline-toolbar .button, .inline-toolbar .button:backdrop, .linked:not(.vertical) > .button,
 .linked:not(.vertical) > .button:hover,
 .linked:not(.vertical) > .button:active,
-.linked:not(.vertical) > .button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive, .primary-toolbar .linked:not(.vertical).path-bar > .button, .header-bar .linked:not(.vertical).path-bar > .button, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover, .header-bar .linked:not(.vertical).path-bar > .button:hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:active, .header-bar .linked:not(.vertical).path-bar > .button:active, .primary-toolbar .linked:not(.vertical).path-bar > .button:checked, .header-bar .linked:not(.vertical).path-bar > .button:checked, .primary-toolbar .linked:not(.vertical).path-bar > .button:insensitive, .header-bar .linked:not(.vertical).path-bar > .button:insensitive, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button,
+.linked:not(.vertical) > .button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive,
+.primary-toolbar .linked:not(.vertical).path-bar > .button,
+.header-bar .linked:not(.vertical).path-bar > .button,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:hover,
+.header-bar .linked:not(.vertical).path-bar > .button:hover,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:active,
+.header-bar .linked:not(.vertical).path-bar > .button:active,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:checked,
+.header-bar .linked:not(.vertical).path-bar > .button:checked,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:insensitive,
+.header-bar .linked:not(.vertical).path-bar > .button:insensitive, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button,
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover,
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:active,
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:checked,
@@ -635,18 +643,24 @@ NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .
   border-right-style: none; }
 
 .linked:not(.vertical) > .entry:first-child, .osd .button:first-child, .inline-toolbar .button:first-child, .linked:not(.vertical) > .button:first-child, .inline-toolbar.toolbar GtkToolButton:first-child > .button.flat, .inline-toolbar GtkToolButton:first-child > .button.flat, .inline-toolbar.toolbar GtkToolButton:first-child > .sidebar-button.button, .inline-toolbar GtkToolButton:first-child > .sidebar-button.button, .linked > GtkComboBox:first-child > .the-button-in-the-combobox,
-.linked > GtkComboBoxText:first-child > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:first-child, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:first-child, .primary-toolbar .linked:not(.vertical).path-bar > .button:first-child, .header-bar .linked:not(.vertical).path-bar > .button:first-child, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:first-child {
+.linked > GtkComboBoxText:first-child > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:first-child, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:first-child,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:first-child,
+.header-bar .linked:not(.vertical).path-bar > .button:first-child, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
 
 .linked:not(.vertical) > .entry:last-child, .osd .button:last-child, .inline-toolbar .button:last-child, .linked:not(.vertical) > .button:last-child, .inline-toolbar.toolbar GtkToolButton:last-child > .button.flat, .inline-toolbar GtkToolButton:last-child > .button.flat, .inline-toolbar.toolbar GtkToolButton:last-child > .sidebar-button.button, .inline-toolbar GtkToolButton:last-child > .sidebar-button.button, .linked > GtkComboBox:last-child > .the-button-in-the-combobox,
-.linked > GtkComboBoxText:last-child > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:last-child, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:last-child, .primary-toolbar .linked:not(.vertical).path-bar > .button:last-child, .header-bar .linked:not(.vertical).path-bar > .button:last-child, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:last-child {
+.linked > GtkComboBoxText:last-child > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:last-child, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:last-child,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:last-child,
+.header-bar .linked:not(.vertical).path-bar > .button:last-child, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border-right-style: solid; }
 
 .linked:not(.vertical) > .entry:only-child, .osd .button:only-child, .inline-toolbar .button:only-child, .linked:not(.vertical) > .button:only-child, .inline-toolbar.toolbar GtkToolButton:only-child > .button.flat, .inline-toolbar GtkToolButton:only-child > .button.flat, .inline-toolbar.toolbar GtkToolButton:only-child > .sidebar-button.button, .inline-toolbar GtkToolButton:only-child > .sidebar-button.button, .linked > GtkComboBox:only-child > .the-button-in-the-combobox,
-.linked > GtkComboBoxText:only-child > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:only-child, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:only-child, .primary-toolbar .linked:not(.vertical).path-bar > .button:only-child, .header-bar .linked:not(.vertical).path-bar > .button:only-child, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:only-child {
+.linked > GtkComboBoxText:only-child > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:only-child, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:only-child,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:only-child,
+.header-bar .linked:not(.vertical).path-bar > .button:only-child, NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:only-child {
   border-radius: 3px;
   border-style: solid; }
 
@@ -676,10 +690,8 @@ NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .
   border-style: solid; }
 
 .menuitem.button.flat, .menuitem.sidebar-button.button, .button:link, .button:visited, .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked, .menu.button, .notebook tab .button, .app-notification .button.flat, .app-notification .sidebar-button.button,
-.app-notification.frame .button.flat,
-.app-notification.frame .sidebar-button.button, .app-notification .button.flat:insensitive, .app-notification .sidebar-button.button:insensitive,
-.app-notification.frame .button.flat:insensitive,
-.app-notification.frame .sidebar-button.button:insensitive, TerminalWindow .notebook .active-page .button, TerminalWindow .notebook .prelight-page .button, TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .prelight-page .button:hover, TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .prelight-page .button:active {
+.app-notification.frame .button.flat, .app-notification.frame .sidebar-button.button, .app-notification .button.flat:insensitive, .app-notification .sidebar-button.button:insensitive,
+.app-notification.frame .button.flat:insensitive, .app-notification.frame .sidebar-button.button:insensitive, TerminalWindow .notebook .active-page .button, TerminalWindow .notebook .prelight-page .button, TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .prelight-page .button:hover, TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .prelight-page .button:active {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -698,7 +710,7 @@ NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .
   color: #cccccc; }
   *:link:visited, .button:visited {
     color: #b3b3b3; }
-    *:selected *:link:visited, *:selected .button:visited:link, *:selected .button:visited {
+    *:selected *:link:visited, *:selected .button:visited {
       color: #d6d6d6; }
   *:link:hover, .button:hover:link, .button:hover:visited {
     color: #e6e6e6; }
@@ -961,15 +973,13 @@ GtkComboBox {
   background-color: transparent; }
 
 .primary-toolbar .separator, .primary-toolbar .sidebar .view.separator, .sidebar .primary-toolbar .view.separator, .header-bar .header-bar-separator,
-.header-bar > GtkBox > .separator.vertical, .sidebar
-.header-bar > GtkBox > .vertical.view.separator {
+.header-bar > GtkBox > .separator.vertical, .sidebar .header-bar > GtkBox > .vertical.view.separator {
   -GtkWidget-wide-separators: true;
   -GtkWidget-separator-width: 1px;
   border-width: 0 1px;
   border-image: linear-gradient(to bottom, rgba(223, 215, 215, 0) 25%, rgba(223, 215, 215, 0.15) 25%, rgba(223, 215, 215, 0.15) 75%, rgba(223, 215, 215, 0) 75%) 0 1/0 1px stretch; }
   .primary-toolbar .separator:backdrop, .header-bar .header-bar-separator:backdrop,
-  .header-bar > GtkBox > .separator.vertical:backdrop, .sidebar
-  .header-bar > GtkBox > .vertical.view.separator:backdrop {
+  .header-bar > GtkBox > .separator.vertical:backdrop, .sidebar .header-bar > GtkBox > .vertical.view.separator:backdrop {
     opacity: 0.6; }
 
 .primary-toolbar .entry, .header-bar .entry {
@@ -1053,67 +1063,113 @@ GtkComboBox {
   border-radius: 3px;
   border-style: solid; }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), .header-bar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), .primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action), .header-bar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), .header-bar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action),
+.header-bar .linked:not(.vertical):not(.path-bar) > .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + .button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
   box-shadow: none; }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .primary-toolbar .linked:not(.vertical).path-bar > .button, .header-bar .linked:not(.vertical).path-bar > .button {
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button,
+.primary-toolbar .linked:not(.vertical).path-bar > .button,
+.header-bar .linked:not(.vertical).path-bar > .button {
   color: rgba(223, 215, 215, 0.8);
   outline-color: rgba(223, 215, 215, 0.1);
   border-color: rgba(25, 25, 25, 0.4);
   background-color: rgba(112, 112, 112, 0.4); }
-  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover, .header-bar .linked:not(.vertical).path-bar > .button:hover {
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover,
+  .primary-toolbar .linked:not(.vertical).path-bar > .button:hover,
+  .header-bar .linked:not(.vertical).path-bar > .button:hover {
     background-color: rgba(150, 150, 150, 0.4); }
-  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .primary-toolbar .linked:not(.vertical).path-bar > .button:active, .header-bar .linked:not(.vertical).path-bar > .button:active, .primary-toolbar .linked:not(.vertical).path-bar > .button:checked, .header-bar .linked:not(.vertical).path-bar > .button:checked {
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:checked,
+  .primary-toolbar .linked:not(.vertical).path-bar > .button:active,
+  .header-bar .linked:not(.vertical).path-bar > .button:active,
+  .primary-toolbar .linked:not(.vertical).path-bar > .button:checked,
+  .header-bar .linked:not(.vertical).path-bar > .button:checked {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: transparent;
     background-color: #999999; }
-  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive, .primary-toolbar .linked:not(.vertical).path-bar > .button:insensitive, .header-bar .linked:not(.vertical).path-bar > .button:insensitive {
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:insensitive,
+  .primary-toolbar .linked:not(.vertical).path-bar > .button:insensitive,
+  .header-bar .linked:not(.vertical).path-bar > .button:insensitive {
     color: rgba(223, 215, 215, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button + .button, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button + .button, .primary-toolbar .linked:not(.vertical).path-bar > .button + .button, .header-bar .linked:not(.vertical).path-bar > .button + .button {
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button + .button, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button + .button,
+.primary-toolbar .linked:not(.vertical).path-bar > .button + .button,
+.header-bar .linked:not(.vertical).path-bar > .button + .button {
   border-left-style: none; }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):hover, .header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):hover {
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):hover,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):hover,
+.header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):hover {
   box-shadow: inset 1px 0 rgba(25, 25, 25, 0.4), inset -1px 0 rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover {
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover,
+.header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover {
   box-shadow: inset -1px 0 rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover {
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover,
+.primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover,
+.header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover {
   box-shadow: inset 1px 0 rgba(25, 25, 25, 0.4); }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry {
   border-left-color: rgba(25, 25, 25, 0); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error {
   border-left-color: rgba(25, 25, 25, 0); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning {
   border-left-color: rgba(25, 25, 25, 0); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry.warning, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry.warning, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry.error, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry.error {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry.warning, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error + .entry.warning,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry.error,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning + .entry.error {
   border-left-color: rgba(25, 25, 25, 0); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:not(:last-child), .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:not(:last-child), .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:last-child, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:last-child {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:not(:last-child), .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:not(:last-child),
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:last-child,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry:focus:last-child {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .button, .header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .button, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox, .header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox, .header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .button, .header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + .button,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:not(:last-child), .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:not(:last-child), .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:last-child, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:last-child {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:not(:last-child), .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:not(:last-child),
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:last-child,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.warning:focus:last-child {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .button, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .button, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .button, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + .button,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry.warning:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:not(:last-child), .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:not(:last-child), .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:last-child, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:last-child {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:not(:last-child), .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:not(:last-child),
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:last-child,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry.error:focus:last-child {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .button, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .button, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .button, .header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + .button,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBox > .the-button-in-the-combobox,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox,
+.header-bar .linked:not(.vertical):not(.path-bar) > .entry.error:focus:not(:only-child) + GtkComboBoxText > .the-button-in-the-combobox {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
-.primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:active + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .button:active + .entry, .primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:checked + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .button:checked + .entry {
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:active + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .button:active + .entry,
+.primary-toolbar .linked:not(.vertical):not(.path-bar) > .button:checked + .entry,
+.header-bar .linked:not(.vertical):not(.path-bar) > .button:checked + .entry {
   border-left-color: rgba(25, 25, 25, 0.4); }
 
 .primary-toolbar .button.suggested-action, .header-bar .button.suggested-action {
@@ -1739,8 +1795,7 @@ GtkInfoBar GtkSwitch.trough:active:insensitive {
 .check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check,
-GtkFileChooserDialog .dialog-vbox > .frame .check {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check, GtkFileChooserDialog .dialog-vbox > .frame .check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .check,
@@ -1753,8 +1808,7 @@ GtkInfoBar .check {
 .check:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:insensitive,
-GtkFileChooserDialog .dialog-vbox > .frame .check:insensitive {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:insensitive, GtkFileChooserDialog .dialog-vbox > .frame .check:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .check:insensitive,
@@ -1767,8 +1821,7 @@ GtkInfoBar .check:insensitive {
 .check:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent,
-GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent, GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .check:inconsistent,
@@ -1781,8 +1834,7 @@ GtkInfoBar .check:inconsistent {
 .check:inconsistent:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent:insensitive,
-GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent:insensitive {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent:insensitive, GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .check:inconsistent:insensitive,
@@ -1795,8 +1847,7 @@ GtkInfoBar .check:inconsistent:insensitive {
 .check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked,
-GtkFileChooserDialog .dialog-vbox > .frame .check:checked {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked, GtkFileChooserDialog .dialog-vbox > .frame .check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .check:checked,
@@ -1809,8 +1860,7 @@ GtkInfoBar .check:checked {
 .check:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked:insensitive,
-GtkFileChooserDialog .dialog-vbox > .frame .check:checked:insensitive {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked:insensitive, GtkFileChooserDialog .dialog-vbox > .frame .check:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .check:checked:insensitive,
@@ -1823,8 +1873,7 @@ GtkInfoBar .check:checked:insensitive {
 .radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio,
-GtkFileChooserDialog .dialog-vbox > .frame .radio {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio, GtkFileChooserDialog .dialog-vbox > .frame .radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .radio,
@@ -1837,8 +1886,7 @@ GtkInfoBar .radio {
 .radio:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:insensitive,
-GtkFileChooserDialog .dialog-vbox > .frame .radio:insensitive {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:insensitive, GtkFileChooserDialog .dialog-vbox > .frame .radio:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .radio:insensitive,
@@ -1851,8 +1899,7 @@ GtkInfoBar .radio:insensitive {
 .radio:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent,
-GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent, GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .radio:inconsistent,
@@ -1865,8 +1912,7 @@ GtkInfoBar .radio:inconsistent {
 .radio:inconsistent:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent:insensitive,
-GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent:insensitive {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent:insensitive, GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .radio:inconsistent:insensitive,
@@ -1879,8 +1925,7 @@ GtkInfoBar .radio:inconsistent:insensitive {
 .radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked,
-GtkFileChooserDialog .dialog-vbox > .frame .radio:checked {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked, GtkFileChooserDialog .dialog-vbox > .frame .radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .radio:checked,
@@ -1893,8 +1938,7 @@ GtkInfoBar .radio:checked {
 .radio:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
 
-GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked:insensitive,
-GtkFileChooserDialog .dialog-vbox > .frame .radio:checked:insensitive {
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked:insensitive, GtkFileChooserDialog .dialog-vbox > .frame .radio:checked:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
 
 WingpanelWidgetsIndicatorPopover.popover .menuitem:hover .radio:checked:insensitive,
@@ -2096,14 +2140,14 @@ GtkScrolledWindow GtkViewport.frame {
   GtkFileChooserButton .separator, GtkFileChooserButton .sidebar.separator, GtkFileChooserButton .sidebar .view.separator, .sidebar GtkFileChooserButton .view.separator,
   GtkFontButton .separator,
   GtkFontButton .sidebar.separator,
-  GtkFontButton .sidebar .view.separator, .sidebar
-  GtkFontButton .view.separator,
+  GtkFontButton .sidebar .view.separator,
+  .sidebar GtkFontButton .view.separator,
   GtkFileChooserButton .separator.vertical,
-  GtkFileChooserButton .sidebar .vertical.view.separator, .sidebar
-  GtkFileChooserButton .vertical.view.separator,
+  GtkFileChooserButton .sidebar .vertical.view.separator,
+  .sidebar GtkFileChooserButton .vertical.view.separator,
   GtkFontButton .separator.vertical,
-  GtkFontButton .sidebar .vertical.view.separator, .sidebar
-  GtkFontButton .vertical.view.separator {
+  GtkFontButton .sidebar .vertical.view.separator,
+  .sidebar GtkFontButton .vertical.view.separator {
     -GtkWidget-wide-separators: true; }
 
 .list {
@@ -2658,13 +2702,10 @@ GtkVolumeButton.button {
   .titlebar .button.titlebutton.minimize:active {
     background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
 
-.view:selected, .view:selected:focus, .view:selected:hover, .label:selected, .label:selected:focus, .label:selected:hover, .grid-child:selected, .menuitem.button.flat:active, .menuitem.sidebar-button.button:active, .menuitem.button.flat:selected, .menuitem.sidebar-button.button:selected, .list-row:selected, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected,
-GtkEntry.gb-command-bar-entry.entry.flat:focus:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active,
+.view:selected, .view:selected:focus, .view:selected:hover, .label:selected, .label:selected:focus, .label:selected:hover, .grid-child:selected, .menuitem.button.flat:active, .menuitem.sidebar-button.button:active, .menuitem.button.flat:selected, .menuitem.sidebar-button.button:selected, .list-row:selected, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected:focus, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active,
 NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected,
-NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover,
-NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:selected,
-NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:active:hover,
-NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:active {
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover, NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:selected,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:active:hover, NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:active {
   background-image: none;
   background-color: #999999;
   color: #ffffff;
@@ -3318,7 +3359,7 @@ UnityDecoration {
 
 UnityPanelWidget,
 .unity-panel {
-  background-image: linear-gradient(to bottom, #373737);
+  background-image: linear-gradient(to bottom, #2f343f);
   color: #f7f7f7;
   box-shadow: none; }
   UnityPanelWidget:backdrop,
@@ -3830,7 +3871,6 @@ MarlinViewWindow .source-list.sidebar.view {
     color: #c4c4c4; }
   NemoWindow .sidebar .separator, NemoWindow .sidebar .view.separator, NemoWindow .source-list.sidebar.view .separator,
   MarlinViewWindow .sidebar .separator,
-  MarlinViewWindow .sidebar .sidebar.separator,
   MarlinViewWindow .sidebar .view.separator,
   MarlinViewWindow .source-list.sidebar.view .separator {
     color: transparent; }
@@ -4006,35 +4046,21 @@ GtkFileChooserDialog .dialog-vbox > .frame .entry {
     color: rgba(196, 196, 196, 0.55);
     background-image: linear-gradient(to bottom, rgba(117, 117, 117, 0.25)); }
 
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider,
-NautilusWindow GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, NemoWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider,
-MarlinViewWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, GeditFileBrowserWidget .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider {
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, NautilusWindow GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, NemoWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, MarlinViewWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider, GeditFileBrowserWidget .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider {
   background-color: #eaeaea;
   border: 1px solid rgba(0, 0, 0, 0.3); }
 
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .trough,
-NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .trough, NemoWindow .sidebar .scrollbar .trough, NemoWindow .source-list.sidebar.view .scrollbar .trough,
-MarlinViewWindow .sidebar .scrollbar .trough,
-MarlinViewWindow .source-list.sidebar.view .scrollbar .trough, GeditFileBrowserWidget .scrollbar .trough {
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .trough, NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .trough, NemoWindow .sidebar .scrollbar .trough, NemoWindow .source-list.sidebar.view .scrollbar .trough, MarlinViewWindow .sidebar .scrollbar .trough, MarlinViewWindow .source-list.sidebar.view .scrollbar .trough, GeditFileBrowserWidget .scrollbar .trough {
   background-color: rgba(0, 0, 0, 0.2);
   border: none; }
 
-GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider,
-NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider, NemoWindow .sidebar .scrollbar .slider, NemoWindow .source-list.sidebar.view .scrollbar .slider,
-MarlinViewWindow .sidebar .scrollbar .slider,
-MarlinViewWindow .source-list.sidebar.view .scrollbar .slider, GeditFileBrowserWidget .scrollbar .slider {
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider, NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider, NemoWindow .sidebar .scrollbar .slider, NemoWindow .source-list.sidebar.view .scrollbar .slider, MarlinViewWindow .sidebar .scrollbar .slider, MarlinViewWindow .source-list.sidebar.view .scrollbar .slider, GeditFileBrowserWidget .scrollbar .slider {
   background-color: rgba(234, 234, 234, 0.7); }
-  GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:hover,
-  NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:hover, NemoWindow .sidebar .scrollbar .slider:hover,
-  MarlinViewWindow .sidebar .scrollbar .slider:hover, GeditFileBrowserWidget .scrollbar .slider:hover {
+  GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:hover, NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:hover, NemoWindow .sidebar .scrollbar .slider:hover, MarlinViewWindow .sidebar .scrollbar .slider:hover, GeditFileBrowserWidget .scrollbar .slider:hover {
     background-color: #f7f7f7; }
-  GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active,
-  NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active, NemoWindow .sidebar .scrollbar .slider:prelight:active,
-  MarlinViewWindow .sidebar .scrollbar .slider:prelight:active, GeditFileBrowserWidget .scrollbar .slider:prelight:active {
+  GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active, NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active, NemoWindow .sidebar .scrollbar .slider:prelight:active, MarlinViewWindow .sidebar .scrollbar .slider:prelight:active, GeditFileBrowserWidget .scrollbar .slider:prelight:active {
     background-color: #999999; }
-  GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:insensitive,
-  NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:insensitive, NemoWindow .sidebar .scrollbar .slider:insensitive,
-  MarlinViewWindow .sidebar .scrollbar .slider:insensitive, GeditFileBrowserWidget .scrollbar .slider:insensitive {
+  GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:insensitive, NautilusWindow GtkPlacesSidebar.sidebar .scrollbar .slider:insensitive, NemoWindow .sidebar .scrollbar .slider:insensitive, MarlinViewWindow .sidebar .scrollbar .slider:insensitive, GeditFileBrowserWidget .scrollbar .slider:insensitive {
     background-color: transparent; }
 
 @define-color theme_fg_color #dbdbdb;

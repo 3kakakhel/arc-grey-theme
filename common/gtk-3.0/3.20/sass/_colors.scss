@@ -48,8 +48,8 @@ $header_border: if($variant == 'light' and $darker=='false', darken($header_bg, 
 $header_fg: if($variant == 'light', saturate(transparentize($fg_color, 0.2), 10%), saturate(transparentize($fg_color, 0.2), 10%));
 $header_fg: if($darker == 'true', saturate(transparentize(#dbdbdb, 0.2), 10%), $header_fg);
 
-$dark_sidebar_bg: if($transparency == 'true', transparentize(#3d3d3d, 0.05), #3d3d3d);
-$dark_sidebar_fg: #c4c4c4;
+$dark_sidebar_bg: if($variant == 'light', if($transparency == 'true', transparentize(#f5f5f5, 0.05), #f5f5f5), if($transparency == 'true', transparentize(#3d3d3d, 0.05), #3d3d3d));
+$dark_sidebar_fg: if($variant == 'light', #3d3d3d, #c4c4c4);
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
 $osd_fg_color: $dark_sidebar_fg;
@@ -83,9 +83,9 @@ $header_button_border: if($darker == 'true' or $variant == 'dark', transparentiz
 //WM Buttons
 
 // Close
-$wm_button_close_bg: if($variant == 'light' and $darker == 'false', #f46067, #cc575d);
-$wm_button_close_hover_bg: if($variant == 'light' and $darker == 'false', #f68086, #d7787d);
-$wm_button_close_active_bg: if($variant == 'light' and $darker == 'false', #f13039, #be3841);
+$wm_button_close_bg: if($variant == 'light' and $darker == 'false', #aaaaaa, #919191);
+$wm_button_close_hover_bg: if($variant == 'light' and $darker == 'false', #bbbbbb, #a7a7a7);
+$wm_button_close_active_bg: if($variant == 'light' and $darker == 'false', #909090, #7b7b7b);
 
 $wm_icon_close_bg: if($variant == 'light' and $darker == 'false',#f7f7f7 , #383838);
 

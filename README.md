@@ -6,15 +6,15 @@ Arc Grey is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Sh
 
 ##### Arc Grey
 
-![A screenshot of the Arc Grey theme](http://i.imgur.com/oi7y9BP.jpg)
+![A screenshot of the Arc Grey theme](http://i.imgur.com/TvNMOpH.jpg)
 
 ##### Arc-Darker Grey
 
-![A screenshot of the Arc-Darker Grey theme](http://i.imgur.com/4BatNqe.jpg)
+![A screenshot of the Arc-Darker Grey theme](http://i.imgur.com/pFJ20JO.jpg)
 
 ##### Arc-Dark Grey
 
-![A screenshot of the Arc-Dark Grey theme](http://i.imgur.com/TnnCLKw.jpg)
+![A screenshot of the Arc-Dark Grey theme](http://i.imgur.com/XIEyYIS.jpg)
 
 ### Requirements
 
@@ -129,7 +129,7 @@ If you find a bug you can [open a ticket](https://github.com/3kakakhel/arc-grey-
 
 
 ### Full Preview
-![A full screenshot of the Arc theme](http://i.imgur.com/VkhI2d5.png)
+![A full screenshot of the Arc theme](http://i.imgur.com/wgi3Pc1.jpg)
 <sub>Screenshot Details: [Icons](https://snwh.org/paper) | Font: Futura</sub>
 
 ### Credits
